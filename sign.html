@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram Sign Up</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="logo">Instagram</div>
+	</header>
+	<main>
+		<section>
+			<h2>Sign Up</h2>
+			<form action="https://formspree.io/f/mvgppaez" method="POST">
+				<input type="email" placeholder="Email" id="email">
+				<input type="text" placeholder="Full Name" id="fullName">
+				<input type="text" placeholder="Username" id="username">
+				<input type="password" placeholder="Password" id="password">
+				<button>Sign Up</button>
+			</form>
+			<p>Already have an account? <a href="log.html">Log In</a></p>
+			<p><a href="index.html">Go back?</a></p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Instagram Clone</p>
+	</footer>
+	<style>
+		body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #fff;
+	padding: 1em;
+	text-align: center;
+	font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.logo {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+}
+section {
+	background-color: #fff;
+	padding: 2em;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 300px;
+}
+h2 {
+	margin-top: 0;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+input {
+	padding: 1em;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+button {
+	background-color: #007bff;
+	color: #fff;
+	padding: 1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #0056b3;
+}
+footer {
+	background-color: #fff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+	</style>
+	<script>
+		// Add event listener to sign up button
+document.querySelector('button').addEventListener('click', event => {
+	event.preventDefault();
+	const email = document.getElementById('email').value;
+	const fullName = document.getElementById('fullName').value;
+	const username = document.getElementById('username').value;
+	const password = document.getElementById('password').value;
+	// Handle form submission (e.g., AJAX request)
+	console.log('Signing up with:', email, fullName, username, password);
+});
+	</script>
+</body>
+</html>
