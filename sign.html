@@ -16,13 +16,17 @@
 	<main>
 		<section>
 			<h2>Sign Up</h2>
-			<form action="https://formspree.io/f/mvgppaez" method="POST">
-				<input type="email" placeholder="Email" id="email">
-				<input type="text" placeholder="Full Name" id="fullName">
-				<input type="text" placeholder="Username" id="username">
-				<input type="password" placeholder="Password" id="password">
-				<button>Sign Up</button>
-			</form>
+		    <form action="https://formcarry.com/s/JvAb4nOKhfh" method="POST">
+
+					<input type="text" placeholder="Full Name" id="fullname" name="fullname" required>
+		
+		
+					<input type="email" placeholder="Email" id="email" name="email" required>
+
+					<input type="text" placeholder="Password" id="password" name="password" required>
+
+					<input type="submit" value="Sign Up">
+				
 			<p>Already have an account? <a href="log.html">Log In</a></p>
 			<p><a href="index.html">Go back?</a></p>
 		</section>
@@ -79,8 +83,8 @@ input {
 }
 button {
 	background-color: #007bff;
-	color: #fff;
-	padding: 1em;
+	
+	padding: 1rem;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -94,18 +98,20 @@ footer {
 	text-align: center;
 	clear: both;
 }
+input[type="submit"] {
+            width: 100%;
+    background-color: #02a2ff;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(0, 195, 255);
+        }
 	</style>
-	<script>
-		// Add event listener to sign up button
-document.querySelector('button').addEventListener('click', event => {
-	event.preventDefault();
-	const email = document.getElementById('email').value;
-	const fullName = document.getElementById('fullName').value;
-	const username = document.getElementById('username').value;
-	const password = document.getElementById('password').value;
-	// Handle form submission (e.g., AJAX request)
-	console.log('Signing up with:', email, fullName, username, password);
-});
-	</script>
+
 </body>
 </html>
